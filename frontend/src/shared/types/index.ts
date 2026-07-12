@@ -30,7 +30,13 @@ export interface TerminalInfo {
   name: string;
 }
 
-/** API base URL for the backend */
+/**
+ * API base URL for the backend.
+ * In production the backend serves the built frontend itself (same origin,
+ * single port), so requests are relative rather than hardcoded to localhost
+ * — that hardcoding broke every deployment reached through a reverse proxy
+ * or tunnel instead of directly on the host running Docker.
+ */
 export const API_BASE = import.meta.env.DEV
   ? 'http://localhost:23233'
-  : `http://localhost:${(window as any).TOROLLO_BACKEND_PORT || 23233}`;
+  : '';

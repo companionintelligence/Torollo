@@ -42,6 +42,10 @@ export class DockerInitializer {
   }
 
   private static async ensureHostForwarding(): Promise<void> {
+    if (process.env.TOROLLO_HOST_FORWARDING !== 'true') {
+      console.log('[DockerInitializer] Skipping host iptables/NAT forwarding rules (set TOROLLO_HOST_FORWARDING=true to enable).');
+      return;
+    }
     try {
       console.log('[DockerInitializer] Configuring Docker host to allow forwarding and preserve source IPs...');
       const temp = await docker.createContainer({

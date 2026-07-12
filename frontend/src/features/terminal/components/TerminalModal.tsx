@@ -22,7 +22,9 @@ export default function TerminalModal({ containerId, nodeName, onClose }: Termin
   const [activeTab, setActiveTab] = useState<'terminal' | 'cheatsheet'>('terminal');
 
   useEffect(() => {
-    const socket = io(API_BASE);
+    // io('') does not reliably fall back to same-origin across socket.io-client
+    // versions — pass undefined explicitly so it connects to window.location.
+    const socket = io(API_BASE || undefined);
     socketRef.current = socket;
 
     const term = new Terminal({
