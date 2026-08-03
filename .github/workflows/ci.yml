@@ -1,10 +1,14 @@
 name: CI
 
+# >>> ci-local:gated original triggers below, restore with `ci-local restore`
+# on:
+#   push:
+#     branches: [ main, dev ]
+#   pull_request:
+#     branches: [ main, dev ]
+# <<< ci-local:gated
 on:
-  push:
-    branches: [ main, dev ]
-  pull_request:
-    branches: [ main, dev ]
+  workflow_dispatch:
 
 jobs:
   build-and-test:
