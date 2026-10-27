@@ -84,3 +84,20 @@ Everything runs **locally** on your machine.
 - All nodes in the workspace correspond exactly to live Docker containers on your local system.
 
 *Note: This project is strictly educational. It is not an AWS clone or a production infrastructure management tool—it is a sandboxed simulator designed to make system design tangible, visual, and fun.*
+
+<!-- companion-hub-readme-deep-review -->
+
+## Project status and operating model
+
+The supported infrastructure nodes and currently available core features are listed above. Items under [Coming Very Soon](#coming-very-soon) are planned work and should not be treated as shipped behavior.
+
+```mermaid
+flowchart LR
+  Learner[User] --> Torollo[Torollo learning workflow]
+  Torollo --> Nodes[Supported infrastructure nodes]
+  Nodes --> Feedback[Observed result and learning feedback]
+  Feedback --> Learner
+```
+
+Use the Quick Start and technology stack sections to prepare the development environment before connecting infrastructure. Keep node credentials in local secrets/configuration and avoid sharing them in screenshots or public issue reports.
+
