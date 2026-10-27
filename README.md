@@ -4,7 +4,7 @@
 
 <p align="center"><strong>A local-first visual simulator and educational playground for backend engineering and system design, inspired by Packet Tracer.</strong></p>
 
-<p align="center"><a href="#quick-start">Get started</a></p>
+<p align="center"><a href="#quick-start">Get started</a> · <a href="https://docs.ci.computer/docs/reference/open-source-systems">Systems map</a></p>
 
 [![torollo version](https://img.shields.io/npm/v/torollo.svg?label=version&style=flat-square)](https://www.npmjs.com/package/torollo)
 [![license](https://img.shields.io/npm/l/torollo.svg?style=flat-square)](https://github.com/Derssa/torollo/blob/main/LICENSE)
