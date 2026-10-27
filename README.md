@@ -4,10 +4,17 @@
 
 <p align="center"><strong>A local-first visual simulator and educational playground for backend engineering and system design, inspired by Packet Tracer.</strong></p>
 
-<p align="center"><a href="#quick-start">Get started</a> · <a href="https://docs.ci.computer/docs/reference/open-source-systems">Systems map</a></p>
+[![npm version](https://img.shields.io/npm/v/torollo?style=flat-square&color=0a6358)](https://www.npmjs.com/package/torollo)
+[![platform](https://img.shields.io/badge/platform-Web%20%C2%B7%20Docker-0a6358?style=flat-square)](https://github.com/companionintelligence/Torollo)
+[![License](https://img.shields.io/badge/license-MIT-2b7a3d?style=flat-square)](LICENSE)
+[![Discord](https://img.shields.io/badge/chat-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/yQp9hwpzAa)
 
-[![torollo version](https://img.shields.io/npm/v/torollo.svg?label=version&style=flat-square)](https://www.npmjs.com/package/torollo)
-[![license](https://img.shields.io/npm/l/torollo.svg?style=flat-square)](https://github.com/Derssa/torollo/blob/main/LICENSE)
+<p align="center"><a href="#quick-start">Get started</a> · <a href="https://docs.ci.computer/docs/reference/open-source-systems">Systems map</a> · <a href="README.md#architecture-overview">Documentation</a></p>
+
+<p align="center">
+  <a href="#quick-start"><img src="https://img.shields.io/badge/Open%20the%20quick%20start-Open%20the%20quick%20start-0a6358?style=for-the-badge&logo=npm&logoColor=white" alt="Open the quick start" height="30"></a>
+</p>
+
 [![node-current](https://img.shields.io/badge/node-%3E%3D18.0.0-success?style=flat-square&logo=nodedotjs)](https://nodejs.org)
 
 
@@ -61,7 +68,27 @@ You can drag and drop a wide range of infrastructure components onto the canvas.
 
 ---
 
+
+## How it fits together
+
+The browser builds and validates a topology graph; the backend owns the live session and starts the selected Docker scenario.
+
+```mermaid
+flowchart LR
+  Editor[React Flow editor] --> Validator[Topology validator]
+  Validator --> API[Express and Socket.IO session]
+  API --> Docker[Docker scenario]
+  Docker --> Terminal[xterm.js output]
+```
+
 ## Core Features & Architecture
+
+| Feature | What it provides |
+|---|---|
+| **Compose a topology** | Build an infrastructure graph in React Flow and validate links and roles before a run. |
+| **Run scenarios** | A separate backend starts container scenarios and streams state to the browser. |
+| **Learn interactively** | Use xterm.js to work in the sandbox and see how topology choices behave. |
+
 
 ### Interactive Learning by Doing
 Instead of reading passive, theory-heavy documentation, you learn by *doing*:
