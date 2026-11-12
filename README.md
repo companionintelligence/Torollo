@@ -4,7 +4,7 @@
 
 <p align="center"><strong>A local-first visual simulator and educational playground for backend engineering and system design, inspired by Packet Tracer.</strong></p>
 
-[![npm version](https://img.shields.io/npm/v/torollo?style=flat-square&color=0a6358)](https://www.npmjs.com/package/torollo)
+
 [![platform](https://img.shields.io/badge/platform-Web%20%C2%B7%20Docker-0a6358?style=flat-square)](https://github.com/companionintelligence/Torollo)
 [![License](https://img.shields.io/badge/license-MIT-2b7a3d?style=flat-square)](LICENSE)
 [![Discord](https://img.shields.io/badge/chat-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/yQp9hwpzAa)

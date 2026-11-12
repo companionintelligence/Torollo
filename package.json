@@ -1,5 +1,5 @@
 {
-  "name": "torollo",
+  "name": "@companionintelligence/torollo",
   "version": "1.1.5",
   "description": "Interactive visual system design learning lab and container supervisor.",
   "keywords": [
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Derssa/torollo.git"
+    "url": "https://github.com/companionintelligence/Torollo.git"
   },
   "bin": "bin/cli.js",
   "scripts": {
@@ -40,5 +40,8 @@
     "backend/projects.json",
     "frontend/dist/**/*",
     "frontend/package.json"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
