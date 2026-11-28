@@ -5,29 +5,70 @@ Every direct dependency declared in this repository's manifests — both
 each group. Transitive dependencies are not listed; resolve them with your
 package manager's own `licenses` command.
 
-**7 direct dependencies** across 3 licence groups.
+**44 direct dependencies** across 4 licence groups.
 
 | Licence      | Count |
 | ------------ | ----: |
-| MIT          |     5 |
-| Apache-2.0   |     1 |
+| MIT          |    40 |
+| Apache-2.0   |     2 |
 | BSD-2-Clause |     1 |
+| ISC          |     1 |
 
 ## MIT
 
-1. [`chokidar`](https://github.com/paulmillr/chokidar) `6.0.0` — runtime
-2. [`cors`](https://github.com/expressjs/cors) `2.8.6` — runtime
-3. [`express`](https://github.com/expressjs/express) `5.3.0` — runtime
-4. [`serve`](https://github.com/vercel/serve) `14.2.8` — runtime
-5. [`socket.io`](https://github.com/socketio/socket.io) `4.8.4` — runtime
+1. [`@eslint/js`](https://github.com/eslint/eslint) `10.0.1` — dev
+2. [`@testing-library/dom`](https://github.com/testing-library/dom-testing-library) `10.4.2` — dev
+3. [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) `8.0.0` — dev
+4. [`@testing-library/react`](https://github.com/testing-library/react-testing-library) `16.3.3` — dev
+5. [`@types/cors`](https://github.com/DefinitelyTyped/DefinitelyTyped) `2.8.19` — dev
+6. [`@types/dockerode`](https://github.com/DefinitelyTyped/DefinitelyTyped) `4.0.2` — dev
+7. [`@types/express`](https://github.com/DefinitelyTyped/DefinitelyTyped) `5.0.6` — dev
+8. [`@types/jest`](https://github.com/DefinitelyTyped/DefinitelyTyped) `30.0.0` — dev
+9. [`@types/node`](https://github.com/DefinitelyTyped/DefinitelyTyped) `26.6.6` — dev
+10. [`@types/react`](https://github.com/DefinitelyTyped/DefinitelyTyped) `19.3.0` — dev
+11. [`@types/react-dom`](https://github.com/DefinitelyTyped/DefinitelyTyped) `19.3.0` — dev
+12. [`@types/supertest`](https://github.com/DefinitelyTyped/DefinitelyTyped) `7.2.1` — dev
+13. [`@vitejs/plugin-react`](https://github.com/vitejs/vite-plugin-react) `6.3.0` — dev
+14. [`@xterm/addon-fit`](https://github.com/xtermjs/xterm.js.git#master) `0.11.0` — runtime
+15. [`@xterm/xterm`](https://github.com/xtermjs/xterm.js) `6.0.0` — runtime
+16. [`@xyflow/react`](https://github.com/xyflow/xyflow) `13.0.3` — runtime
+17. [`chokidar`](https://github.com/paulmillr/chokidar) `6.0.0` — runtime
+18. [`cors`](https://github.com/expressjs/cors) `2.8.6` — runtime
+19. [`eslint`](https://github.com/eslint/eslint) `10.15.0` — dev
+20. [`eslint-plugin-react-hooks`](https://github.com/facebook/react) `7.1.1` — dev
+21. [`eslint-plugin-react-refresh`](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) `0.5.8` — dev
+22. [`express`](https://github.com/expressjs/express) `5.3.0` — runtime
+23. [`globals`](https://github.com/sindresorhus/globals) `17.14.0` — dev
+24. [`i18next`](https://github.com/i18next/i18next) `27.2.6` — runtime
+25. [`jest`](https://github.com/jestjs/jest) `30.5.2` — dev
+26. [`jsdom`](https://github.com/jsdom/jsdom) `31.0.1` — dev
+27. [`nodemon`](https://github.com/remy/nodemon) `3.1.14` — dev
+28. [`react`](https://github.com/react/react) `19.3.1` — runtime
+29. [`react-dom`](https://github.com/react/react) `19.3.1` — runtime
+30. [`react-i18next`](https://github.com/i18next/react-i18next) `18.0.3` — runtime
+31. [`serve`](https://github.com/vercel/serve) `14.2.8` — runtime
+32. [`socket.io`](https://github.com/socketio/socket.io) `4.8.4` — runtime
+33. [`socket.io-client`](https://github.com/socketio/socket.io) `4.8.4` — runtime
+34. [`supertest`](https://github.com/ladjs/supertest) `7.3.2` — dev
+35. [`ts-jest`](https://github.com/kulshekhar/ts-jest) `29.4.15` — dev
+36. [`ts-node`](https://github.com/TypeStrong/ts-node) `10.9.2` — dev
+37. [`tsx`](https://github.com/privatenumber/tsx) `4.23.15` — dev
+38. [`typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint) `8.74.0` — dev
+39. [`vite`](https://github.com/vitejs/vite) `8.3.8` — dev
+40. [`vitest`](https://github.com/vitest-dev/vitest) `5.1.1` — dev
 
 ## Apache-2.0
 
 1. [`dockerode`](https://github.com/apocas/dockerode) `5.0.1` — runtime
+2. [`typescript`](https://github.com/microsoft/TypeScript) `7.0.2` — dev
 
 ## BSD-2-Clause
 
 1. [`dotenv`](https://github.com/motdotla/dotenv) `18.0.10` — runtime
+
+## ISC
+
+1. [`lucide-react`](https://github.com/lucide-icons/lucide) `1.78.0` — runtime
 
 ---
 
